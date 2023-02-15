@@ -1,0 +1,491 @@
+
+
+@font-face {
+    font-family: "poppins-medium";
+    src: url(./font/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: "poppins-bold";
+    src: url(./font/Poppins-Bold.ttf);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(rgba(24, 24, 22, 0.1),rgba(24,24,22, 0.1)),url(./img/header-background.jpg);
+    background-size: cover;
+    background-position: 0px;
+    font-family: poppins-medium;
+    font-size: 17px;
+    color: white;
+    /* opacity: 0.8; */
+}
+
+nav {
+    padding: 54px 0px 0px 117px;
+    display: flex;
+
+}
+
+.navi {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.navi div {
+    display: flex;
+    justify-self: space-around;
+    width: 17%;
+    padding-top: 10px;
+}
+
+.navi a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+}
+
+.navi a:hover {
+    color: white;
+}
+
+.navi a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 0.5s ease-in;
+}
+
+.navi a:hover::before {
+    transform: scaleX(1);
+}
+
+.p1 {
+    margin: 250px 117px 0px 117px;
+}
+
+h1 {
+    font-family: poppins-bold;
+    font-size: 65px;
+    padding-right: 40%;
+}
+
+.hr1 {
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.p1 {
+    padding-bottom: 52px;
+}
+
+.p1 p {
+    font-size: 18px;
+    padding-right: 42%;
+    padding-top: 3%;
+}
+
+#company {
+    background-color: #F2EFEF;
+    display: flex;
+    align-items: center;
+    font-family: poppins-bold;
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+
+#company h2 {
+    font-size: 65px;
+    margin-left: 30%;
+    width: 380px;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    margin-left: 70%;
+    width: 85%;
+}
+
+.cercle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 50px;
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 5%;
+    font-size: 25px;
+}
+
+.cercle1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 5%;
+    font-size: 25px;
+}
+
+.text h3 {
+    margin-bottom: 0px;
+    margin-left: 5%;
+    font-size: 30px;
+}
+
+.text p {
+    font-family: poppins-medium;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 5%;
+}
+
+.for {
+    margin-top: 40%;
+    font-family: poppins-medium;
+}
+
+.for a {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+    border-bottom:2px solid #000;
+    border-bottom-width:2px;
+}
+
+.for a:hover {
+    color: #000;
+    border-bottom: none;
+}
+
+.for a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0px;
+    left: 0;
+    background-color: #000;
+    transform-origin: bottom left;
+    transition: transform 0.5s ease-in;
+}
+
+.for a:hover::before {
+    transform: scaleX(1);
+}
+
+.arrow {
+    font-size: 20px;
+    border: #000;
+}
+
+#collection .lamp1 {
+    background-image: url(./img/lamp\ magazine.jpg);
+}
+
+#collection .lamp2 {
+    background-image: url(./img/lamp\ over.jpg);
+}
+
+#collection .lamp3 {
+    background-image: url(./img/lamp\ sofa.jpg);
+    transition:all 500ms;
+}
+
+
+#collection div {
+    background-position: center;
+    background-size: cover;
+    padding: 43% 20% 0px 0%;
+}
+
+#collection .lamp1:hover {
+    background: linear-gradient(rgba(24, 24, 22, 0.5),rgba(24,24,22, 0.5))
+    ,url(./img/lamp\ magazine.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: 500ms;
+}
+
+#collection .lamp2:hover {
+    background: linear-gradient(rgba(24, 24, 22, 0.5),rgba(24,24,22, 0.5))
+    ,url(./img/lamp\ over.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: 500ms;
+}
+
+#collection .lamp3:hover {
+    background: linear-gradient(rgba(24, 24, 22, 0.5),rgba(24,24,22, 0.5))
+    ,url(./img/lamp\ sofa.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+
+#collection {
+    display: flex;
+    height: 100%;
+    background-color: #161618;
+}
+
+#collection h2 {
+    font-family: poppins-bold;
+    color: white;
+    padding-left: 15%;
+}
+
+#contact {
+    height: 100vh;
+    background-color: #F2EFEF;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+#contact h2 {
+    display: flex;
+    justify-content: center;
+    font-family: poppins-bold;
+    font-size: 65px;
+    padding: 3% 0%;
+    margin: 0;
+}
+
+#contact .form {
+    margin: 0% 9% 0% 10%;
+}
+
+
+#contact div {
+    display: flex;
+    font-family: poppins-medium;
+    font-size: 18px;
+    margin-top: 4%;
+}
+
+#contact .info {
+    display: block;
+    margin: 0% 10% 0% 5%;
+}
+
+label,
+input {
+    display: block;
+    margin-left: 15%;
+}
+
+.info p {
+    margin-top: 0;
+}
+
+input {
+    margin-top: 2%;
+    margin-bottom: 10%;
+    height: 48px;
+    width: 428px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+input::placeholder {
+    color: #696973;
+    padding-left: 4%;
+    font-family: poppins-medium;
+    font-size: 17px;
+}
+
+
+.info h3 {
+    margin-bottom: 3%;
+    padding-top: 7%;
+    font-family: poppins-bold;
+    font-size: 30px;
+
+}
+
+.vertical-line {
+    border-left: 2px solid #000;
+    display: inline-block;
+    height: 435px;
+    margin: 0px 20px;
+    margin-left: 3%;
+}
+
+.submitButton {
+    font-family: poppins-medium;
+    font-size: 18px;
+    background-color: #111111;
+    color: #FFFFFF;
+    border: none;
+}
+
+.submitButton:hover {
+    background-color: #ffffff;
+    color: #111111;
+    transition: 500ms;
+    border: none;
+}
+
+footer {
+    background-color: #000;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div {
+    margin: 3% 10%;
+}
+
+.certif {
+    font-family: poppins-medium;
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+@media (max-width: 500px) {
+    nav {
+        padding: 9% 0% 0% 34%;
+        width: 60%;
+        display: block;
+
+    }
+
+    .navi {
+        display: block;
+        padding: 5% 0% 0% 5%;
+        margin-right: 0%;
+        font-size: 20px;
+    }
+
+    .navi div {
+        width: 50%;
+    }
+
+    h1 {
+        font-size: 31px;
+        padding-right: 0%;
+    }
+
+    .p1 {
+        margin: 19% 15% 0% 15%;
+    }
+
+    .p1 p {
+        padding-right: 0%;
+    }
+
+    #company {
+        display: block;
+        height: 148vh;
+    }
+
+    #company h2 {
+        font-size: 31px;
+        margin-left: 7%;
+        width: 310px;
+        margin-top: 0%;
+        padding-top: 15%;
+    }
+
+    .text {
+        margin-left: 15%;
+        width: 62%;
+    }
+
+    .text h3,
+    .text p {
+        font-size: 18px;
+    }
+
+    .cercle1 {
+        width: 125px;
+    }
+
+    .cercle {
+        width: 139px;
+    }
+
+    #collection {
+        display: block;
+    }
+
+    #collection h2 {
+        margin: 0% 0% 0% 0%;
+    }
+
+    #collection div {
+        padding: 73% 52% 10% 5%;
+    }
+
+    #contact {
+        height: 180vh;
+    }
+
+    #contact div {
+        display: block;
+    }
+
+    .vertical-line {
+        display: none;
+    }
+
+    #contact h2 {
+        font-size: 36px;
+        padding: 10% 0%;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer div{
+        margin: 0%;
+        padding: 5% 0% 5% 0%;
+    }
+    label,input{
+        margin:5% 5%;
+        width: 300px;
+    }
+    #contact .info{
+        display: flex;
+        margin:0% ;
+        margin-bottom: 5%;
+    }
+
+    .for a{
+        margin-top: 5%;
+        position: absolute;
+        left: 107px;
+    }
+}
